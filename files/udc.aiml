@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>hello</pattern>
+    <template>Hello, do you require assistance finding a CS career?
+<button>
+    <text>Yes</text>
+    <postback>soft1</postback>
+</button>
+<reply>
+    <text>No</text>
+    <postback>bye</postback>
+</reply></template>
+  </category>
+<category><pattern>SOFT1</pattern><template>Great! I will ask you questions to help determine what interests you. Are you more interested in creating software applications?
+<reply>
+    <text>Yes</text>
+    <postback>yesdev</postback>
+</reply>
+<button>
+    <text>No</text>
+    <postback>dataadmin</postback>
+</button></template></category>
+<category><pattern>YESDEV</pattern><template>Great! I recommend you become a software developer.A Software Developer designs and builds computer programs that power mobile devices, desktop computers, and even cars.</template></category>
+<category><pattern>DATAADMIN</pattern><template>Are you fascinated by managing and organizing data?
+<reply>
+    <text>Yes</text>
+    <postback>dataadminyes</postback>
+</reply>
+<button>
+    <text>no</text>
+    <postback>neteng</postback>
+</button></template></category>
+<category><pattern>DATAADMINYES</pattern><template>Great! I recommend you become a data admin. Database Administrators ensure that the databases run efficiently and securely.</template></category>
+<category><pattern>NETENG</pattern><template>Are you interested in designing and implementing computer networks?
+<reply>
+    <text>Yes</text>
+    <postback>netengyes</postback>
+</reply>
+<button>
+    <text>no</text>
+    <postback>datasci</postback>
+</button></template></category>
+<category><pattern>NETENGYES</pattern><template>Great! I recommend you become a network engineer! A Network Engineer job description can therefore comprise of: Designing and implementing new network solutions and/or improving the efficiency of current networks. </template></category>
+<category><pattern>DATASCI</pattern><template>Are you fascinated by analyzing and interpreting complex datasets? 
+<reply>
+    <text>Yes</text>
+    <postback>datasciyes</postback>
+</reply>
+<button>
+    <text>no</text>
+    <postback>cyberana</postback>
+</button></template></category>
+<category><pattern>DATASCIYES</pattern><template>Cool! I recommend you become a data scientist. Common responsibilities for Data Analysts include extracting data using special tools and software, responding to data-related queries, setting up processes to make data more efficient, analyzing and interpreting trends from the data, and reporting trends to add business value.</template></category>
+<category><pattern>CYBERANA</pattern><template>Are you most concerned about identifying and preventing cyber threats?
+<reply>
+    <text>yes</text>
+    <postback>cyberanayes</postback>
+</reply>
+<reply>
+    <text>No</text>
+    <postback>nochoice</postback>
+</reply></template></category>
+<category><pattern>CYBERANAYES</pattern><template>Nice! I recommend you become a cyber analyst. A cyber security analyst is primarily responsible for protecting a company's network and systems from cyber attacks. </template></category>
+<category><pattern>NOCHOICE</pattern><template>Ok lets discuss further! Contact me!</template></category>
+<category><pattern>BYE</pattern><template>Goodbye!</template></category>
+
+<category><pattern>hi</pattern><template><srai>HELLO</srai></template></category>
+<category><pattern>hey</pattern><template><srai>HELLO</srai></template></category>
+<category><pattern>yo</pattern><template><srai>HELLO</srai></template></category>
+<category><pattern>_help_</pattern><template><srai>HELLO</srai></template></category>
+<category><pattern>_career_</pattern><template><srai>HELLO</srai></template></category>
+<category><pattern>_choose_</pattern><template><srai>HELLO</srai></template></category>
+
+</aiml>
